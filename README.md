@@ -1,11 +1,10 @@
-# PlexEXT
+# PlexEXTWolff
 
-Does stuff to make Plex better.
+Does stuff to make Plex better. A slight adaption from skoshy's PlexEXT to incorporate my network setup better.
 
 ## What stuff?
 
 Incorporates some CSS changes
-
 Brightness Control using hotkeys (see hotkeys below)
 
 ## What are all the hotkeys I can use?
@@ -16,10 +15,8 @@ Brightness Control using hotkeys (see hotkeys below)
 ## How do I install it?
 
 1. Get [TamperMonkey](https://tampermonkey.net/) or another userscript manager
-2. Install via GitHub by [clicking here](https://github.com/skoshy/PlexEXT/raw/master/userscript.user.js).
-
-This script is also cross-posted to [Greasy Fork](https://greasyfork.org/en/scripts/21720-plexext)
+2. Install latest version from GitHub by [clicking here](https://github.com/jadonwolffs/PlexEXT/raw/master/userscript.user.js).
 
 ## Known Issues
 
-None so far! If you find any, let me know.
+None so far! If you find any, let me know and if it's deeper than my adaptions I'll pass along to skoshy
