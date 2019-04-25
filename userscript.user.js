@@ -1,12 +1,14 @@
 ﻿// ==UserScript==
-// @name         PlexEXT
+// @name         PlexEXTWolff
 // @icon         https://www.macupdate.com/images/icons256/27302.png
 // @namespace    skoshy.com
-// @version      0.1.3
+// @version      0.1.4
 // @description  Enhances Plex
-// @author       Stefan Koshy
-// @updateURL    https://github.com/skoshy/PlexEXT/raw/master/userscript.user.js
+// @author       Stefan Koshy, modified by Jadon Wolffs
+// @updateURL    https://github.com/jadonwolffs/PlexEXT/raw/master/userscript.user.js
 // @match        http*://localhost:32400/*
+// @match        http*://*serverwolff.com:32400/*
+// @match        http*://192.168.1.119:32400/*
 // @match        http*://app.plex.tv/web/*
 // @grant        none
 // ==/UserScript==
@@ -64,25 +66,25 @@ function brightnessChangeCheck(event) {
 function parseFromFilter(name, string) {
   if (string == undefined)
 	return false;
-  
+
   var startLength = name.length+1;
   var startPos = string.indexOf(name+'(');
-  
+
   if (startPos == -1)
 	return false;
-  
+
   var endPos = string.indexOf(')', startLength+startPos);
-  
+
   if (endPos == -1)
 	return false;
-  
+
   return string.substring(startLength+startPos, startLength+startPos+endPos);
 }
 
 function showTooltip(text) {
   newElements.tooltip.innerHTML = text;
   newElements.tooltip.style.display = 'block';
-  
+
   clearTimeout(timers.tooltip);
   timers.tooltip = setTimeout(function() {newElements.tooltip.style.display = 'none';}, 1000);
 }
@@ -101,8 +103,8 @@ function addGlobalStyle(css, id) {
 function initialize() {
   if (location.hostname == 'localhost' && location.port != '32400')
   	return;
-  
-  // create the tooltip  
+
+  // create the tooltip
   newElements.tooltip = document.createElement('div');
   newElements.tooltip.className = scriptid+'-tooltip';
   newElements.tooltip.style.display = 'none';
