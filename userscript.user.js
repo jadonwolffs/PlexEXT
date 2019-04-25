@@ -28,10 +28,10 @@ var css = `
   position: fixed;
   bottom: 5px;
   left: 5px;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(0, 0, 0, .8);
   padding: 3px;
   border-radius: 20px;
-  color: black;
+  color: white;
   z-index: 10000000;
 }
 `;
@@ -86,7 +86,7 @@ function showTooltip(text) {
   newElements.tooltip.style.display = 'block';
 
   clearTimeout(timers.tooltip);
-  timers.tooltip = setTimeout(function() {newElements.tooltip.style.display = 'none';}, 1000);
+  timers.tooltip = setTimeout(function() {newElements.tooltip.style.display = 'none';}, 500);
 }
 
 function addGlobalStyle(css, id) {
