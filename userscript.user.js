@@ -1,8 +1,8 @@
 ﻿// ==UserScript==
 // @name         PlexEXTWolff
 // @icon         https://www.macupdate.com/images/icons256/27302.png
-// @namespace    skoshy.com
-// @version      0.1.4
+// @namespace    jadonwolffs.github.io
+// @version      0.1.5
 // @description  Enhances Plex
 // @author       Stefan Koshy, modified by Jadon Wolffs
 // @updateURL    https://github.com/jadonwolffs/PlexEXT/raw/master/userscript.user.js
