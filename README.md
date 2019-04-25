@@ -1,6 +1,6 @@
 # PlexEXTWolff
 
-Does stuff to make Plex better. A slight adaption from skoshy's PlexEXT to incorporate my network setup better.
+Does stuff to make Plex better. A slight adaption from [skoshy's](https://github.com/skoshy) [PlexEXT](https://github.com/skoshy/PlexEXT) to incorporate my network setup better.
 
 ## What stuff?
 
